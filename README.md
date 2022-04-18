@@ -6,7 +6,7 @@ The code implements a TensorRT model for performing face recognition on a given 
 The system consists of the following models in cascade:
 
    -MTCNN face detection model
-   -ResNet50 face recognition model
+   -ResNet50 face recognition model (NOT included)
   
 These models are contained within face-detection.py and face_recognition.py, respectively.
 Since this system was developed with a passive use in mind, most configurations are preset within the scripts, but a config file can be

@@ -17,7 +17,7 @@ By default, the code is preset to run on two separate IP cameras.
 
 The system is implemented in two different scripts, of which either can be run from the command line: 
 
-    -face_recognition_tracking.py: The input for both cameras are displayed on screen. Faces detected above the detection threshold on those inputs are delimited by a bounding box. If those faces are recognized to belong to a given ID above a preset confidence value, the corresponding ID name will be written down below its box. Intended as a demo.
+   -face_recognition_tracking.py: The input for both cameras are displayed on screen. Faces detected above the detection threshold on those inputs are delimited by a bounding box. If those faces are recognized to belong to a given ID above a preset confidence value, the corresponding ID name will be written down below its box. Intended as a demo.
 
    -face_recognition_register.py: No windows are displayed, and the script continues to run without visual outputs.Sightings of the IDs on the database  are recorded in login_data.csv, which registers the date and time of the last sighting for each ID.
   

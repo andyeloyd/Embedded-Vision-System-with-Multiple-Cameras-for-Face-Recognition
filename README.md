@@ -5,8 +5,8 @@ The code implements a TensorRT model for performing face recognition on a given 
 
 The system consists of the following models in cascade:
 
-  -MTCNN face detection model
-  -ResNet50 face recognition model
+    -MTCNN face detection model
+    -ResNet50 face recognition model
   
 These models are contained within face-detection.py and face_recognition.py, respectively.
 Since this system was developed with a passive use in mind, most configurations are preset within the scripts, but a config file can be
@@ -16,6 +16,6 @@ By default, the code is preset to run on two separate IP cameras.
 
 The system is implemented in two different scripts, of which either can be run from the command line: 
 
-  -face_recognition_register.py: Sightings of the IDs on the database that go through detection filterings (preset in each code) are recorded in login_data.csv, which registers the date and time of the last sighting for each ID.
+    -face_recognition_register.py: Sightings of the IDs on the database that go through detection filterings (preset in each code) are recorded in login_data.csv, which registers the date and time of the last sighting for each ID.
   
-  -face_recogntion_tracking.py: The input for both cameras are displayed on screen. Faces detected above the detection threshold on those inputs are delimited by a bounding box. If those faces are recognized to belong to a given ID above a preset confidence value, the corresponding ID name will be written down below its box.
+    -face_recogntion_tracking.py: The input for both cameras are displayed on screen. Faces detected above the detection threshold on those inputs are delimited by a bounding box. If those faces are recognized to belong to a given ID above a preset confidence value, the corresponding ID name will be written down below its box.
